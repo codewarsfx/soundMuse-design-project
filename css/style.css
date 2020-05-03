@@ -1,0 +1,147 @@
+:root {
+  box-sizing: border-box;
+  --background: #2f303a;
+  --pink: #bc3a80;
+  --blue: #1762a7;
+  --light: #fff;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  height: 100vh;
+  margin: 0;
+  background-color: var(--background);
+  font-family: 'Poppins', sans-serif;
+}
+.wrapper {
+  position: relative;
+  height: 100%;
+  width: 100;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 113px 1fr;
+  grid-gap: 20px;
+  align-items: center;
+  /* background-color: indigo; */
+}
+.icon {
+  grid-column: 2;
+  display: flex;
+  align-self: center;
+  /* background-color: hotpink; */
+}
+.nav {
+  grid-column: 10;
+  /* background-color: greenyellow; */
+}
+ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+ul li a {
+  font-size: 24px;
+  font-weight: 400;
+  padding: 0px 20px;
+  transition: all 0.1s linear;
+}
+ul li a:hover {
+  border-bottom: 1px solid var(--light);
+}
+ul li + li {
+  margin-left: 65px;
+}
+
+nav {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+  /* background-color: red; */
+}
+
+.hero-image {
+  grid-column: 2;
+  grid-row: 2 / auto;
+  position: relative;
+  align-self: end;
+}
+
+.content {
+  grid-column: 6;
+  position: absolute;
+  top: 371px;
+  font-size: 36px;
+}
+.content h1 {
+  font-size: 72px;
+  font-weight: normal;
+  margin-bottom: 8px;
+}
+.content p {
+  margin-top: 0;
+}
+.content a {
+  border-radius: 10px;
+  display: inline-block;
+  padding: 25px 35px;
+  transition: all 0.1s linear;
+  background-color: var(--blue);
+}
+.content a:hover {
+  transform: scale(1.05);
+}
+.cont .text {
+  align-self: center;
+}
+a {
+  text-decoration: none;
+}
+h1,
+a,
+p {
+  color: var(--light);
+}
+.circle1 {
+  position: absolute;
+  width: 286px;
+  height: 286px;
+  left: 1613px;
+  top: 100px;
+  border-radius: 50%;
+  background: rgba(23, 98, 167, 0.1);
+}
+.circle2 {
+  position: absolute;
+  width: 594px;
+  height: 594px;
+  left: 1780px;
+  top: 600px;
+  border-radius: 50%;
+  background: rgba(188, 58, 128, 0.1);
+}
+.circle3 {
+  position: absolute;
+  width: 286px;
+  height: 286px;
+  left: 674px;
+  top: 195px;
+  border-radius: 50%;
+  background: rgba(23, 98, 167, 0.1);
+}
+.circle4 {
+  position: absolute;
+  width: 322px;
+  height: 322px;
+  left: 0px;
+  top: 820px;
+  border-radius: 50%;
+  background: rgba(188, 58, 128, 0.1);
+}
